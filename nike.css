@@ -1,0 +1,1130 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.opacity4 {
+    opacity: 0.7;
+
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+.none {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+header {
+
+   background-color: rgb(242, 242, 242);
+   height: 5vh;
+   /* prende colore sfondo */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 3em;
+}
+
+header div {
+    width: 50%;
+}
+
+header ul {
+
+    float: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    width: 100% / 4;
+    float: left;
+    padding: 0.5em;
+    font-size: 0.7em;
+    font-weight: bold;
+
+}
+
+header ul li a {
+text-decoration: none;
+color: rgb(77, 77, 77);
+}
+
+header ul li a:hover {
+    color: rgb(113, 113, 113);
+    }
+
+
+header img {
+    width: 40px;
+}
+
+
+
+
+/* barra menu */
+
+nav {
+        /* In pratica 1vh rappresenta 1% dell'altezza della finestra del browser */
+        height: 9vh;
+        padding: 0 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    
+
+
+nav #imgdiv {
+    width: 30%;
+    float: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0.5em;
+}
+
+nav div img {
+    width: 75px;
+}
+    
+
+nav #uldiv {
+
+    width: 40%;
+    float: left;
+    
+    
+}     
+
+nav div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav div ul li {
+    list-style: none;
+    width: 100% / 4;
+    float: left;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    
+    
+}
+
+nav div ul li a {
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    text-align: center;
+    
+}
+
+nav div ul li a:hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 1em;
+    
+}
+
+
+
+
+nav #cardiv {
+    width: 30%;
+    float: left;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0.5em;
+    position: relative;
+}
+
+#divinput {
+    border-radius: 25px;
+    background-color:rgb(242, 242, 242);
+    padding: 0.5em 0;
+}
+
+#divinput:hover {
+    background-color:rgb(220, 217, 217);
+   
+}
+
+
+#inputcerca {
+    border: none;
+    font-size: 1em;
+    background-color: transparent;
+    width: 120px;
+    
+    
+}
+
+
+
+#inputcerca:focus {
+    outline: none;
+}
+
+#inputcerca::placeholder {
+    font-weight: bold;
+    color: #cbcbcb;
+    
+}
+
+i {
+    font-size: 1.4em;
+    padding: 0.3em;
+    margin-left: 1em;
+    
+}
+i:first-child {
+    margin-left: 0;
+}
+
+i:hover {
+    border-radius: 50%;
+    background-color:rgb(220, 217, 217);
+    
+}
+
+/* terzabarra */
+
+#barra3 {
+    
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+    margin-bottom: 3em;
+    
+}
+
+#barra3 h4{
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+
+#barra3 p {
+    font-size: 0.7em;
+    margin: 0.5em 0 0 0;   
+    text-align: center;
+}
+
+#barra3 a {
+    color: black;
+}
+
+
+
+
+
+/* copertina*/
+
+aside {
+    background-image: url("/MATERIALE/Home-page/hero-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    padding: 0 3em;
+    color: white;
+
+}
+
+aside h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+aside p {
+    margin: 2em 0;
+    font-weight: bold;
+    
+}
+
+aside #contenutocopertina {
+ padding-top: 25em;
+}
+
+.button {
+    border-radius: 25px;
+    border: none;
+    padding: 0.8em 1.5em;
+    text-align: center;
+    background-color: white;
+
+}
+
+.button:hover {
+    background-color:rgb(220, 217, 217)
+}
+
+
+
+
+
+/* box */
+
+main {
+    margin: 3em 0;
+    padding: 0 5em;
+    
+    
+}
+
+main i {
+    color: grey;
+    font-size: 1.4em;
+    padding: 0.1em;
+}
+
+main i:hover {
+   color: black;
+    
+}
+
+main div {
+    margin-bottom: 3em;
+}
+
+
+main #trend {
+    position: relative;
+    clear: both;
+}
+
+main #trend .arrowsx {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: black;
+}
+
+main #trend .arrowdx {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    color: black;
+}
+
+
+
+
+main #trend div {
+    width: calc(97% / 3);
+    float: left;
+    margin: 0 0.5% 3% 0.5%;
+    
+}
+
+main img {
+    width: 100%;
+}
+
+.shoes {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0.5em 0;
+}
+
+.shoes2 {
+    font-size: 1em;
+    font-weight: normal;
+    color: rgb(149, 149, 149);
+    margin: 0.5em 0;
+
+}
+
+
+main #sport {
+    position: relative;
+    clear: both;
+    
+}
+
+main #sport .arrowsx {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    color: black;
+}
+
+main #sport .arrowdx {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: black;
+}
+
+
+
+main #sport div {
+  
+    width: calc(97% / 3);
+    float: left;
+    margin: 0 0.5% 3% 0.5%;
+
+}
+
+
+
+
+
+main #membership {
+    position: relative;
+    clear: both;
+}
+
+main #membership .arrowsx {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    color: black;
+}
+
+ main #membership .arrowdx {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: black;
+}
+
+main #membership div {
+    width: calc(97% / 3);
+    float: left;
+    margin: 0 0.5% 3% 0.5%;
+    color: white;
+    padding: 26em 0 0 1em ;
+    font-size: 0.7em;
+    
+    
+}
+
+main #membership h2, h4 {
+    font-weight: normal;
+}
+
+
+
+
+
+#mem1 {
+    background-image: url("/MATERIALE/Home-page/banner_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 439px;
+}
+
+#mem2 {
+    background-image: url("/MATERIALE/Home-page/banner_5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 439px;
+}
+
+#mem3 {
+    background-image: url("/MATERIALE/Home-page/banner_6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 439px
+}
+
+#mem4 {
+    background-image: url("/MATERIALE/Home-page/banner_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 439px
+}
+
+#mem5 {
+    background-image: url("/MATERIALE/Home-page/banner_3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 439px
+}
+
+#mem6 {
+    background-image: url("/MATERIALE/Home-page/banner_4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 439px
+}
+
+
+
+.opacity2 {
+    border: 5px solid red;
+}
+
+
+
+
+
+/* footer */
+
+footer {
+    clear: both;
+    margin: auto;
+    margin-top: 35em;
+    background-color: rgb(16, 16, 16);
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    
+    
+    
+ }
+
+footer::after {
+    content:"";
+    clear: both;
+    display: block;
+ }
+
+footer #genitorefooter {
+    width: 70%;
+}
+
+footer #genitorefooter div {
+    float: left;
+    margin-right: 5em;
+}
+
+footer #genitorefooter div:last-child {
+    margin-right: 0;
+}
+
+footer #genitorefooter div ul {
+    list-style: none;
+    padding-top: 1em;
+}
+
+footer #genitorefooter div ul li  {
+    padding: 0.7em 0.5em;
+ }
+
+footer #genitorefooter div ul li a {
+   text-decoration: none;
+   color: white;
+}
+
+.fontmini {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
+
+
+footer #genitoreicon {
+    width: 30%;
+    float: right;
+    padding-right: 3em;
+}
+
+footer #genitoreicon {
+    padding-top: 2.4em;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+footer #genitoreicon div i {
+
+    color:  rgb(16, 16, 16);
+    background-color: rgb(143, 143, 143);
+    border-radius: 50%;
+}
+
+
+
+footer #genitoreicon div i:hover {
+    background-color: white;
+} 
+
+footer div #privacy {
+    padding-top: 7em;
+    width: 40%;
+    clear: both;
+    float: left;
+    padding-left: 3em;
+    font-size: 0.7em;
+}
+
+footer div #informativa {
+    width: 60%;
+    float: right;
+    padding-top: 4em;
+}
+
+footer div #informativa ul {
+    list-style: none;
+    padding-right: 3em;
+}
+
+footer div #informativa ul li {
+   
+    width: calc(100% / 6);
+    float: left;
+    font-size: 0.7em;
+    text-align: center;
+
+
+}
+
+.info {
+    padding-left: 3em;
+    color: rgb(143, 143, 143);
+   
+}
+
+.info2 {
+    padding: 0.5em;
+    color: rgb(143, 143, 143);
+   
+} 
+
+
+
+/* pagina scarpa prodotto */
+
+
+
+#dunk {
+    width: 70%;
+    
+    height: 800px;
+    margin: auto;
+    padding: 0;
+    
+    
+}
+
+#dunk div {
+    margin-right: 1%;
+}
+
+#dunk div:last-child {
+    margin-right: 0;
+}
+
+#dunk #dunkimgmini {
+    width: 8%;
+    float: left;
+}
+
+#dunk #dunkimgprincipale {
+    width: 44.5%;
+    float: left;
+}
+
+#dunk #dunktaglie {
+    width: 44.5%;
+    float: left;
+}
+
+#dunkimmagini:hover {
+  background-clip: rgb(109, 109, 109,0.5);
+ 
+}
+
+
+#dunk img {
+    max-width: 100%;
+}
+
+#dunk #dunkimgmini img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 7px;
+    margin: auto;
+    margin-bottom: 0.5em;
+}
+
+
+
+#dunk #dunkimgmini video {
+
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+video {
+    max-width: 100%;
+}
+
+
+
+
+
+
+#dunktaglie {
+  
+    text-align: center;
+    
+    
+}
+
+#dunktaglie h2, h4, h3 {
+    margin: 0;
+    text-align: left;
+    font-weight: normal;
+   
+    
+}
+
+#dunktaglie h3 {
+    margin-top: 1em;
+}
+
+.radio {
+  
+        width: calc(98% / 3);
+        height: 50px;
+        background-color: white;
+        border: 1px solid rgb(115, 115, 115);
+        margin-bottom: 0.5em; 
+        border-radius: 7px;
+}
+
+.radio:hover {
+
+    border: 1px solid black;
+
+}
+
+
+.car {
+    width: 100%;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    border: none;
+    padding: 1.5em 0;
+    margin: 1em 0;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.car:hover {
+    background-color: rgb(181, 180, 180);
+    border: 1px solid rgb(181, 180, 180);
+}
+
+.car2 {
+    width: 100%;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 1.5em 0;
+    border: 1px solid rgb(115, 115, 115);
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.car7 {
+    width: 100%;
+    
+}
+
+.car2:hover {
+
+    border: 1px solid black;
+
+}
+
+
+
+/*boxcarrello*/
+
+section {
+position: absolute;
+top: 14%;
+right: 0;
+background-color: white;
+width: 320px;
+height: 220px;
+
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.titlecar {
+   margin-top: 2%;
+    font-weight: normal;
+    margin-left: 7%;
+}
+
+
+section div h5, h4 {
+    margin: 0;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+
+
+section div {
+    width: 40%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+section div img {
+    width: 65px;
+    height: 70px;
+    margin-left: 25%;
+    
+   
+}
+
+#buttoncar {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+
+.car3 {
+    width: 40%;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 1.5em 0;
+    margin: 1em 0;
+    border: 1px solid rgb(176, 176, 176);
+    font-weight: bold;
+    font-size: 0.7em;
+    margin: 0 1em;
+}
+
+.car3:hover {
+    border: 1px solid black;
+}
+
+.car4 {
+    width: 40%;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    border: none;
+    padding: 1.5em 0;
+    margin: 1em 0;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+.car4:hover {
+    
+    background-color: rgb(181, 180, 180);    
+    border: 1px solid rgb(181, 180, 180);
+    
+}
+
+.selezionata {
+    border: 2px solid black;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+
+
+/*carrello */
+
+#carrello {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 35em;
+}
+
+#carrello div {
+    width: 50%;
+    float: left;
+    margin: 0;
+}
+
+#carrello div:last-child {
+    width: 35%;
+    float: left;
+    margin: 0 2em ;
+}
+
+#carrello .divcarrello div{
+    width: 100%;
+    margin: 0;
+    padding: 0.7em 0.7em 0.3em 0.7em;
+
+}
+
+.pborder {
+    border: 2px solid black;
+}
+
+.boxcarrello {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+.boxcarrello div img{
+    width: 80px;
+    height: 100px;
+}
+
+#carrello .divcarrello .boxcarrello div:first-child {
+    width: 25%;
+    float: left;
+}
+
+#carrello .divcarrello .boxcarrello div {
+    width: 50%;
+    float: left;
+}
+
+#carrello .divcarrello .boxcarrello div:last-child {
+    width: 15%;
+    float: left;
+}
+
+.margintitle {
+    margin: 0;
+    font-weight: normal;
+    padding-bottom: 0.2em;
+}
+
+.margintitle2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 0.8em;
+    padding-top: 0.5em;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+#carrello .divcarrello .riepilogobox {
+    width: 70%;
+    float: left;
+}
+
+#carrello .divcarrello .riepilogobox2 {
+    width: 30%;
+    float: left;
+    padding-top: 1.7em;
+}
+
+#carrello .divcarrello #genitoreboxriepilogo {
+    border-bottom: 1px solid grey;
+}
+
+
+
+/* pagamento */
+
+#payments {
+    clear: both;
+    padding-top: 10em;
+    width: 70%;
+    margin: auto;
+}
+
+#payments #formpay {
+    width: 65%;
+    float: left;
+} 
+
+#payments #intocar {
+    width: 35%;
+    float: left;
+}
+
+#payments #formpay form input {
+    width: 48%;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 1em;
+    float: left;
+    margin: 1%;
+}
+
+#payments #formpay form input:nth-child(6) {
+    width: 98%;
+}
+
+
+#payments #formpay form input:nth-child(7) {
+    width: 31.3%;
+}
+
+#payments #formpay form input:nth-child(8) {
+    width: 31.3%;
+}
+#payments #formpay form input:nth-child(9) {
+    width: 31.3%;
+}
+
+#payments #formpay form input:nth-child(12) {
+    width: 25%;
+    float: right;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.option {
+    margin-left: 0;
+    margin-bottom: 1em;
+    margin-top: 3em;
+
+}
+
+
+#payments #intocar div {
+    width: 50%;
+    float: left;
+    font-size: 15px;
+}
+
+
+/* //pagamento2 */
+
+#payments2 {
+    width: 70%;
+    margin: auto;
+    margin-top: 40em;
+    margin-bottom: 10em;
+}
+
+#payments2 #divpay2 {
+    width: 65%;
+}
+
+#payments2 #divpay2 form label {
+    display: block;
+    padding-bottom: 1em;
+}
+
+#divpay3 {
+
+    padding: 1.5em;
+    border: 1px solid black;
+    border-radius: 7px;
+
+}
+
+
+#divpay3 input {
+     padding: 1em;
+     border-radius: 7px;
+     border: 1px solid black;    
+    }
+
+
+    /* thankyoupage */
+#payments3 {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 17em;
+        margin-top: 17em;
+        text-align: center;
+    }
+
+
+    .thank-you-message {
+        font-size: 1em;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .additional-info {
+        font-size: 16px;
+        color: #666;
+    }
+
+    #payments3 img {
+        width: 20%;
+        height: 20%;
+    }
+
+    .red {
+        color: red;
+    }
+
+    
+
+    
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
